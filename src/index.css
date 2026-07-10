@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-card: var(--surface-card);
+  --color-accent: var(--accent);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-info: var(--info);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-border: var(--border);
+}
+
+:root {
+  /* Original dark theme is default to prevent startup flicker */
+  --primary: #F7C54A;
+  --primary-light: #FCD873;
+  --primary-dark: #C59922;
+  --secondary: #92A1BA;
+  --background: #465674;
+  --surface: #465674;
+  --surface-card: #2E3A52;
+  --accent: #F7C54A;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --info: #3B82F6;
+  --text-primary: #FFFFFF;
+  --text-secondary: #D1D9E6;
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+.light {
+  --primary: #EAB308; /* Tailwind Yellow 500 */
+  --primary-light: #FDE047;
+  --primary-dark: #CA8A04;
+  --secondary: #475569;
+  --background: #F8FAFC;
+  --surface: #F1F5F9;
+  --surface-card: #FFFFFF;
+  --accent: #EAB308;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --info: #3B82F6;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --border: rgba(15, 23, 42, 0.08);
+}
+
+.dark {
+  --primary: #F7C54A;
+  --primary-light: #FCD873;
+  --primary-dark: #C59922;
+  --secondary: #92A1BA;
+  --background: #465674;
+  --surface: #465674;
+  --surface-card: #2E3A52;
+  --accent: #F7C54A;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --info: #3B82F6;
+  --text-primary: #FFFFFF;
+  --text-secondary: #D1D9E6;
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary font-sans antialiased transition-colors duration-200;
+  }
+}

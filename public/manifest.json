@@ -1,0 +1,17 @@
+{
+  "short_name": "Scooter",
+  "name": "Scooter - Purpose in Every Ride",
+  "icons": [
+    {
+      "src": "/scooter-icon.png",
+      "type": "image/png",
+      "sizes": "512x512 1024x1024 any",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#465674",
+  "theme_color": "#F7C54A",
+  "display": "standalone",
+  "orientation": "portrait"
+}
